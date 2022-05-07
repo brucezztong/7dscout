@@ -1,5 +1,11 @@
 7 Days POI Scout
 
+Let me state right up front that this tool probably counts as proof of reverse
+engineering parts of 7 Days to Die, and is thus also proof of my violation of
+The Fun Pimps' license which I agreed to follow when I bought and played the
+game. Gadzooks, please don't sue me. Sorry. Not sorry; I needed it. TFP, you
+can use it too. Really. :)
+
 This little application is provided as-is. I needed a tool, so I threw one
 together. I started with some code from Liam Brandt, found on GitHub. Since
 Liam's code was covered by the GPLv3, this effort is also covered by the GPLv3
