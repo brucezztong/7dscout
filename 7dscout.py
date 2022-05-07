@@ -62,7 +62,7 @@ def main():
     outputFileBlocks.write( "POI,Block,Count\n" )
 
     outputFileLoot = open( outputLootSummaryFileName, "w" )
-    outputFileLoot.write( "POI,Block,Count\n" )
+    outputFileLoot.write( "POI,Block,Count,Description\n" )
 
     #######################################################################################
     # Get the list of Loot Blocks and their Values
@@ -156,7 +156,7 @@ def main():
 
             for x in range( len( blockCounts ) ):
                 if ( blockCounts[x] != 0 ):
-                    outputFileBlocks.write( shortName + "," + blockDesc[x] + "," + str( blockCounts[x] ) + "\n" )
+                    outputFileBlocks.write( shortName + "," +  blockDesc[x] + "," + str( blockCounts[x] ) + "\n" )
 
             #######################################################################################
             # Loot Summary...
@@ -165,7 +165,7 @@ def main():
             for x in range( len( blockCounts ) ):
                 if ( blockCounts[x] != 0 ):
                     if blockDesc[x] in lootDictionary:
-                        outputFileLoot.write( shortName + "," +  blockDesc[x] + "," + str( blockCounts[x] ) + "\n" )
+                        outputFileLoot.write( shortName + "," +  blockDesc[x] + "," + str( blockCounts[x] ) + "," + lootDictionary[blockDesc[x]] + "\n" )
 
     outputFileBlocks.close()
     outputFileLoot.close()
