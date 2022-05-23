@@ -1,0 +1,9 @@
+Format: blocks.nim
+
+Bytes   Type    Purpose
+4   int Unknown - Version?
+4   int Unknown - Number of Blocks
+-- Repeats for each Block --
+4   int Block ID, but must mask with 2047 (2^11)
+1   byte    Block Name Length
+x   char    Block Name (ASCII)
